@@ -3,7 +3,7 @@ The goal of this assignment is to get some experience with sequence labeling. We
 
 In sequence labeling it is often beneficial to optimize the tags assigned to the sequence as a whole rather than treating each tag decision separately
 
-Training data : <a href = "https://github.com/Niranjani29/Sequence_Labelling/blob/master/train.zip"></a>
+Training data : <a href = "https://github.com/Niranjani29/Sequence_Labelling/blob/master/train.zip">Training Data</a>
 
 Corpus tools file :
 Provides three functions and two data containers:
@@ -23,7 +23,7 @@ Add training data to the Trainer object using the append method which takes two 
 
 Step 2: 
 
-<a href = "https://github.com/Niranjani29/Sequence_Labelling/blob/master/baseline_tagger.py"></a>
+<a href = "https://github.com/Niranjani29/Sequence_Labelling/blob/master/baseline_tagger.py">Baseline Tagger</a>
 In the baseline feature set, for each utterance you include:
 • a feature for whether or not the speaker has changed in comparison with the previous utterance.
 • a feature marking the first utterance of the dialogue.
@@ -32,10 +32,10 @@ In the baseline feature set, for each utterance you include:
 
 ADVANCED :
 
-<a href = "https://github.com/Niranjani29/Sequence_Labelling/blob/master/advanced_tagger.py"></a>
+<a href = "https://github.com/Niranjani29/Sequence_Labelling/blob/master/advanced_tagger.py">Advanced Tagger</a>
 I have worked on the punctuations. I have made two changes 
 	(1) If the Utterance is a question, than I have appended a string "QUESTION" like "FIRST_UTTERANCE" and "NO_WORDS"
 	(2) I personally feel that commas dont play a vital role in this assignment. So I have eliminated tokens that are commas(",")
 
 Step 3:
-Print the output labels to 'output.txt'  <a href = "https://github.com/Niranjani29/Sequence_Labelling/blob/master/output.txt"></a>
+Print the output labels to 'output.txt'  <a href = "https://github.com/Niranjani29/Sequence_Labelling/blob/master/output.txt">Output File</a>
