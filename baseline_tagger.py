@@ -129,9 +129,16 @@ location = sys.argv[2]
 data_test = get_data(location)
 y_pred, y_train = my_testing(data_test)
 f = open(sys.argv[3], "w" )
+y_train_count = 0
+correct = 0
 for item in y_pred:
     if item=="\n":
         f.write(item)
         continue
     f.write(item)
     f.write("\n")
+    if item == y_train[y_train_count]:
+        correct += 1
+    y_train_count += 1
+
+print(correct, y_train_count)

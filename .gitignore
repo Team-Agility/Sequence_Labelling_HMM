@@ -1,0 +1,4 @@
+train/
+test/
+abc.crfsuite
+*.txt
